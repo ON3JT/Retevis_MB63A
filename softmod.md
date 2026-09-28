@@ -62,8 +62,12 @@ There is no Po (Power Output Hi/Lo) menu item available.
 - Power the radio on
 - Cycle thru the menu with Up/Down
 
+The frequency the radio in tuned to in Service mode : 27.255 (channel 23)  
+
+
 Press PTT while changing a value, it is saved after power off/on.
 Values are displayed in HEX.
+
 
 | What | Value HEX | Value dec | What is it for  |
 |----|----|----|-----|
@@ -78,14 +82,14 @@ Values are displayed in HEX.
 | A4   | 29  | 41 |                          |
 | A8   | 4E    | 78 |                           |
 | to   | 00/0  |  |                          |
-| 5H   | AC    | 172 | Squelch treshold? See text 5H below|
+| 5H   | AC    | 172 | Squelch treshold? See text 5H below, Squelch High|
 | 5C   | 7d    | 125 |                          |
 | 5A   | 43    | 67 |                          |
 | 59   | F7    | 247 |                          |
 | 57   | 99    |  153 |                          |
 | 55   | 1A    | 26 |                          |
 | 53   | 67    | 103 |                          |
-| 5L   | 6d    | 109 | is now 5F, Signal Level (SL instead of 5L) ?                 |
+| 5L   | 6d    | 109 | is now 5F, Signal Level (SL instead of 5L) ?  Squelch Low     |
 | AH   | 9F    | 159  |                         |
 | AL   | 97    |  151 |                         |
 | 5t   | 03    | 3  |                         |
@@ -111,3 +115,27 @@ So CF = 207
 
 
 ---
+After AI searching this could be the interpretation :
+| What | Value HEX | Value dec | What is it for  |
+|----|----|----|-----|
+| Fr | 67 | 103 |  Frequency Real, adjust osc freq.  |
+| PH | Cd | 205 | Power High   |
+| Pn | 80| 128 | Power Normal / Power Nominal 4-8 watt, depending on export mode  |
+| PL | 71 | 113 | Power Low  |
+| Fn   | 39  | 57 |  Frequency Nominal, Factory reference  |
+| A4   | 29  | 41 |  Power, 4 watt  |
+| A8   | 4E    | 78 |  Power, 8 watt export  |
+| to   | 00/0  |  |Time Out Timer   |
+| 5H - SH  | AC    | 172 |  Squelch High, AC was factory, now CF (207) |
+| 5C - SC  | 7d    | 125 |   S-Meter Clear / S-Meter Zero   |
+| 5A - SA   | 43    | 67 |   S-Meter Attenuation / S-Meter Max, 9+30 dBm   |
+| 59 - S9   | F7    | 247 | S-Meter S9   |
+| 57 - S7   | 99    |  153 | S-Meter S7  |
+| 55 - S5   | 1A    | 26 |  S-Meter S5    |
+| 53 -S3  | 67    | 103 |  S-Meter S3     |
+| 5L - SL   | 6d    | 109 | Squelch Low, 6d was factory, now 5F (95) without me setting anything     |
+| AH   | 9F    | 159  |    ASQ High  |
+| AL   | 97    |  151 |    ASQ Low    |
+| 5t - St  | 03    | 3  |   Squelch Tone / Signaling Threshold , is it noise or real voice (ASQ) |
+| At   | 04    | 4  |  Audio Tone / Roger Beep Deviation  + volume  |
+| Pb   |  -  | -  |     Power, 12/24 volt detection?    |
