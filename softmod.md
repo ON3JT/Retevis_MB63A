@@ -8,7 +8,7 @@ For those who find the 40 standard channels sufficient but would like a bit more
 ## Change "region"
 
 - Power the radio off
-- Press and hold the PTT button and AM/FM
+- Press and hold the **PTT** button and **AM/FM**
 - Power the radio on
 - Using the up/down arrows, you can now switch between **Fcc** , **CE** and **Bra**. 
 - Turn off to acknowledge.
@@ -34,7 +34,7 @@ Here starts the fun, you can switch between a few country settings.
 
 To do this :
 - Power the radio off
-- Press and hold the AM/FM button
+- Press and hold the **AM/FM** button
 - Power the radio on
 - Using the up/down arrows, you can now switch between **EU** , **CE** , **U**, **PL**, **I2**, **dE** and **In** 
 - Turn off to acknowledge.
@@ -58,7 +58,7 @@ There is no Po (Power Output Hi/Lo) menu item available.
 **Use at your own risk!**
 
 - Power the radio off
-- Press and hold the PTT button, Menu  and AM/FM
+- Press and hold the **PTT** button and **Menu**
 - Power the radio on
 - Cycle thru the menu with Up/Down
 
